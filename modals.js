@@ -17,7 +17,7 @@
 	
 	var hideModal = function(event){
     event.preventDefault();
-    document.querySelectorAll('.modal').forEach(modal => modal.classList.remove('show'));
+    document.querySelector('.modal.show').classList.remove('show');
 		document.querySelector('#modal-overlay').classList.remove('show');
 	};
 	
